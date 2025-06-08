@@ -3,6 +3,12 @@
 Una aplicación web interactiva que te permite explorar los planetas de nuestro sistema solar. 
 Desarrollada con Next.js 15, TypeScript y Tailwind CSS.
 
+![Solar System Explorer Preview](./public/image.png)
+![Solar System Explorer Preview](./public/image2.png)
+
+**URL de la app desplegada**
+[Solar System Explorer](https://reto-tres-astronautas-ami18au1y-codigonaturals-projects.vercel.app/)
+
 ## Características
 
 - Exploración detallada de planetas del sistema solar
