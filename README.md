@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Solar System Explorer
 
-## Getting Started
+Una aplicación web interactiva que te permite explorar los planetas de nuestro sistema solar. 
+Desarrollada con Next.js 15, TypeScript y Tailwind CSS.
 
-First, run the development server:
+## Características
 
+- Exploración detallada de planetas del sistema solar
+- Búsqueda y filtrado de planetas por nombre
+- Diseño responsivo para todos los dispositivos
+- Sistema de favoritos con almacenamiento local
+- Paginación y ordenamiento
+- Rutas dinámicas y manejo de estado eficiente
+
+## Tecnologías Utilizadas
+
+- **Next.js 15**: Framework React con renderizado del lado del servidor
+- **TypeScript**: Tipado estático para mayor robustez
+- **Tailwind CSS**: Framework de utilidades CSS
+- **Zustand**: Manejo de estado global
+- **React Icons**: Iconografía consistente
+- **Framer Motion**: Animaciones suaves
+
+## Instalación
+
+1. Clona el repositorio:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/codigo-natural/reto-tres-astronautas.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instala las dependencias:
+```bash
+cd solar-system-app
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Inicia el servidor de desarrollo:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-## Learn More
+## Decisiones Técnicas
 
-To learn more about Next.js, take a look at the following resources:
+### 1. Arquitectura y Estructura
+- **App Router de Next.js**: Utilizado para aprovechar las últimas características de Next.js 15
+- **Server Components**: Implementados para mejorar el rendimiento y SEO
+- **Client Components**: Usados donde se requiere interactividad del usuario
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. Manejo de Estado
+- **Zustand**: Implementado para el manejo de favoritos con persistencia local
+- **URL State**: Parámetros de búsqueda y ordenamiento en la URL
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 3. Estilos
+- **Tailwind CSS**: Para un desarrollo rápido y consistente
+- **Diseño Responsivo**: Implementado con un enfoque mobile-first
 
-## Deploy on Vercel
+### 4. Optimizaciones
+- **Imágenes Optimizadas**: Uso de next/image para carga eficiente
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Características de UI/UX
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Diseño Moderno**: Interfaz limpia y atractiva
+- **Animaciones Suaves**: Transiciones y efectos visuales
+- **Feedback Visual**: Indicadores de carga y estados de interacción
+- **Accesibilidad**: Implementación de ARIA y semántica HTML
+
+## API Utilizada
+
+La aplicación utiliza la API de Solar System OpenData para obtener información detallada de los planetas.
+
+## Testing
+
+El proyecto utiliza Jest y la biblioteca de pruebas de React. Para ejecutar las pruebas:
+
+```bash
+# correr pruebas
+npm test
+
+# Ejecutar pruebas en modo de observación
+npm run test:watch
+```
+
+El conjunto de pruebas incluye:
+- Pruebas de renderizado de componentes
+- Pruebas de interacción con el usuario
+- Pruebas de gestión de estados
+- Pruebas de paginación
+- Pruebas de funcionalidad de búsqueda

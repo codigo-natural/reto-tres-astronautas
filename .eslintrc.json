@@ -1,0 +1,18 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "@typescript-eslint/no-var-requires": "off",
+    "import/no-commonjs": "off"
+  },
+  "overrides": [
+    {
+      "files": [
+        "jest.config.js"
+      ],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off",
+        "import/no-commonjs": "off"
+      }
+    }
+  ]
+}
