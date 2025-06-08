@@ -5,10 +5,11 @@ import Link from 'next/link'
 import { getPlanetById, getPlanets } from '@/services/api'
 import { PlanetDetailView } from '@/components/planets/PlanetDetailView'
 
-interface PlanetDetailPageProps {
-  params: {
+type PlanetDetailPageProps = {
+  params: Promise<{
     planetId: string
-  }
+  }>
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
 // metadatos dinamicos (SEO)

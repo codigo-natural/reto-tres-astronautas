@@ -30,7 +30,7 @@ export default function NotFound() {
               Houston, we have a problem!
             </h2>
             <p className='text-gray-400 max-w-md mx-auto'>
-              Looks like this planet is not in our solar system. The page you're
+              Looks like this planet is not in our solar system. The page you&apos;re
               looking for has drifted into deep space.
             </p>
           </div>

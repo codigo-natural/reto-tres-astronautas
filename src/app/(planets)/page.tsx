@@ -7,11 +7,11 @@ import { getPlanets } from '@/services/api'
 const ITEMS_PER_PAGE = 5
 
 interface PlanetListPageProps {
-  searchParams: {
+  searchParams: Promise<{
     q?: string
     sort?: string
     page?: string
-  }
+  }>
 }
 
 export default async function PlanetListPage({
